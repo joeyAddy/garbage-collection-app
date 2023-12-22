@@ -61,7 +61,7 @@ const Login = () => {
             }}
             className="rounded-2xl bg-green-400 py-3 items-center"
           >
-            <Text className="font-bold text-lg  text-gray-500">Login</Text>
+            <Text className="font-bold text-lg  text-white">Login</Text>
           </TouchableOpacity>
           <View className="my-3 space-x-1 flex-row flex-wrap justify-center items-center">
             <Text className="text-gray-500 text-center">
@@ -72,7 +72,7 @@ const Login = () => {
                 Terms of service
               </Text>
             </Pressable>
-            <Text className="text-gray-500">and</Text>
+            <Text className="fill-gray-500">and</Text>
             <Pressable>
               <Text className="text-gray-800 underline underline-offset-2">
                 Policies

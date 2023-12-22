@@ -14,16 +14,10 @@ const _layout = () => {
           let iconName;
           if (route.name === "index") {
             iconName = focused ? "md-home" : "md-home-outline";
-          } else if (route.name === "stats") {
-            iconName = focused ? "md-stats-chart" : "md-stats-chart-outline";
           } else if (route.name === "notifications") {
             iconName = focused ? "notifications" : "notifications-outline";
           } else if (route.name === "settings") {
             iconName = focused ? "settings" : "settings-outline";
-          } else if (route.name === "complaints") {
-            iconName = focused
-              ? "chatbox-ellipses"
-              : "chatbox-ellipses-outline";
           }
           return (
             <View
@@ -53,15 +47,9 @@ const _layout = () => {
       })}
     >
       <Tabs.Screen
-        name="stats"
+        name="notifications"
         options={{
-          href: "home/stats",
-        }}
-      />
-      <Tabs.Screen
-        name="complaints"
-        options={{
-          href: "home/complaints",
+          href: "home/notifications",
         }}
       />
       <Tabs.Screen
@@ -80,12 +68,6 @@ const _layout = () => {
         name="settings"
         options={{
           href: "home/settings",
-        }}
-      />
-      <Tabs.Screen
-        name="notifications"
-        options={{
-          href: "home/notifications",
         }}
       />
     </Tabs>

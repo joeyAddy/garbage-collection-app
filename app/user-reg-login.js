@@ -39,7 +39,7 @@ const UserRegAndLogin = () => {
               setActiveSection("login");
             }}
             className={`items-center py-3 w-1/2 ${
-              activeSection === "login" && "border-b-4 border-gray-500"
+              activeSection === "login" && "border-b-[3px] border-gray-500"
             }`}
           >
             <Text
@@ -55,7 +55,7 @@ const UserRegAndLogin = () => {
               setActiveSection("signup");
             }}
             className={`items-center py-3 w-1/2 duration-300 ${
-              activeSection === "signup" && "border-b-4 border-gray-500"
+              activeSection === "signup" && "border-b-[3px] border-gray-500"
             }`}
           >
             <Text
